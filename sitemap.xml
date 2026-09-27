@@ -1,1 +1,42 @@
-<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>/</loc></url><url><loc>/calculadora-gasolina.html</loc></url><url><loc>/coste-viaje-coche.html</loc></url><url><loc>/dividir-gastos-viaje.html</loc></url><url><loc>/calculadora-descuento.html</loc></url><url><loc>/calculadora-porcentaje.html</loc></url><url><loc>/calculadora-iva.html</loc></url><url><loc>/calculadora-prestamo.html</loc></url><url><loc>/calculadora-ahorro.html</loc></url><url><loc>/interes-compuesto.html</loc></url><url><loc>/calculadora-electricidad.html</loc></url><url><loc>/calculadora-precio-hora.html</loc></url><url><loc>/calculadora-regla-tres.html</loc></url></urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://zurvo.pages.dev/</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-gasolina.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/coste-viaje-coche.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/dividir-gastos-viaje.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-descuento.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-porcentaje.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-iva.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-prestamo.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-ahorro.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/interes-compuesto.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-electricidad.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-precio-hora.html</loc>
+  </url>
+  <url>
+    <loc>https://zurvo.pages.dev/calculadora-regla-tres.html</loc>
+  </url>
+</urlset>
