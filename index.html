@@ -1,1 +1,225 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f5f7fb"><title>Zurvo | Herramientas útiles</title><meta name="description" content="Calculadoras y herramientas gratuitas para decisiones cotidianas."><link rel="stylesheet" href="/ruptura.css"></head><body><header class="topbar"><a class="brand" href="/"><span class="brand-mark">M</span><span>ZURVO</span></a><nav class="nav"><a href="/">Inicio</a></nav></header><main><section class="hero reveal"><span class="eyebrow">12 herramientas · gratis</span><h1>Haz tus cuentas.<br><span style="color:#6c7483">Sin complicarte.</span></h1><p class="hero-copy">Un pequeño ecosistema de herramientas útiles para dinero, viajes, hogar, trabajo y matemáticas. Rápidas, claras y sin ruido.</p><div class="search"><span class="search-icon">⌕</span><input id="search" type="search" placeholder="Buscar una herramienta…" autocomplete="off"></div><div class="chips" id="chips"><button class="chip active" data-filter="Todas" type="button">Todas</button><button class="chip " data-filter="Viajes" type="button">Viajes</button><button class="chip " data-filter="Dinero" type="button">Dinero</button><button class="chip " data-filter="Matemáticas" type="button">Matemáticas</button><button class="chip " data-filter="Hogar" type="button">Hogar</button><button class="chip " data-filter="Trabajo" type="button">Trabajo</button></div></section><section><div class="grid" id="toolGrid"><a class="card reveal delay-1" href="/calculadora-gasolina.html" data-category="Viajes" data-search="calculadora de gasolina calcula cuánto combustible y dinero necesitas para un trayecto. viajes"><div class="card-top"><span class="icon">⛽</span><span class="arrow">↗</span></div><h3>Calculadora de gasolina</h3><p>Calcula cuánto combustible y dinero necesitas para un trayecto.</p></a><a class="card reveal delay-2" href="/coste-viaje-coche.html" data-category="Viajes" data-search="coste de viaje en coche estima el coste de un viaje según distancia, consumo y precio del combustible. viajes"><div class="card-top"><span class="icon">🚗</span><span class="arrow">↗</span></div><h3>Coste de viaje en coche</h3><p>Estima el coste de un viaje según distancia, consumo y precio del combustible.</p></a><a class="card reveal delay-3" href="/dividir-gastos-viaje.html" data-category="Dinero" data-search="dividir gastos reparte un gasto entre varias personas de forma rápida. dinero"><div class="card-top"><span class="icon">↗</span><span class="arrow">↗</span></div><h3>Dividir gastos</h3><p>Reparte un gasto entre varias personas de forma rápida.</p></a><a class="card reveal delay-1" href="/calculadora-descuento.html" data-category="Dinero" data-search="calculadora de descuento descubre cuánto ahorras y cuál será el precio final. dinero"><div class="card-top"><span class="icon">%</span><span class="arrow">↗</span></div><h3>Calculadora de descuento</h3><p>Descubre cuánto ahorras y cuál será el precio final.</p></a><a class="card reveal delay-2" href="/calculadora-porcentaje.html" data-category="Matemáticas" data-search="calculadora de porcentaje calcula porcentajes de cualquier cantidad en segundos. matemáticas"><div class="card-top"><span class="icon">%</span><span class="arrow">↗</span></div><h3>Calculadora de porcentaje</h3><p>Calcula porcentajes de cualquier cantidad en segundos.</p></a><a class="card reveal delay-3" href="/calculadora-iva.html" data-category="Dinero" data-search="calculadora de iva calcula iva y precio total de forma sencilla. dinero"><div class="card-top"><span class="icon">€</span><span class="arrow">↗</span></div><h3>Calculadora de IVA</h3><p>Calcula IVA y precio total de forma sencilla.</p></a><a class="card reveal delay-1" href="/calculadora-prestamo.html" data-category="Dinero" data-search="calculadora de préstamo estima la cuota mensual de un préstamo. dinero"><div class="card-top"><span class="icon">▣</span><span class="arrow">↗</span></div><h3>Calculadora de préstamo</h3><p>Estima la cuota mensual de un préstamo.</p></a><a class="card reveal delay-2" href="/calculadora-ahorro.html" data-category="Dinero" data-search="calculadora de ahorro calcula cuánto tiempo necesitas para alcanzar un objetivo. dinero"><div class="card-top"><span class="icon">◒</span><span class="arrow">↗</span></div><h3>Calculadora de ahorro</h3><p>Calcula cuánto tiempo necesitas para alcanzar un objetivo.</p></a><a class="card reveal delay-3" href="/interes-compuesto.html" data-category="Dinero" data-search="interés compuesto estima cómo puede crecer una inversión con aportaciones periódicas. dinero"><div class="card-top"><span class="icon">↗</span><span class="arrow">↗</span></div><h3>Interés compuesto</h3><p>Estima cómo puede crecer una inversión con aportaciones periódicas.</p></a><a class="card reveal delay-1" href="/calculadora-electricidad.html" data-category="Hogar" data-search="calculadora de electricidad estima el consumo mensual y su coste. hogar"><div class="card-top"><span class="icon">ϟ</span><span class="arrow">↗</span></div><h3>Calculadora de electricidad</h3><p>Estima el consumo mensual y su coste.</p></a><a class="card reveal delay-2" href="/calculadora-precio-hora.html" data-category="Trabajo" data-search="calculadora de precio por hora calcula cuánto ingresas aproximadamente por cada hora trabajada. trabajo"><div class="card-top"><span class="icon">◷</span><span class="arrow">↗</span></div><h3>Calculadora de precio por hora</h3><p>Calcula cuánto ingresas aproximadamente por cada hora trabajada.</p></a><a class="card reveal delay-3" href="/calculadora-regla-tres.html" data-category="Matemáticas" data-search="regla de tres resuelve reglas de tres simples rápidamente. matemáticas"><div class="card-top"><span class="icon">=</span><span class="arrow">↗</span></div><h3>Regla de tres</h3><p>Resuelve reglas de tres simples rápidamente.</p></a></div><div class="empty" id="empty">No hemos encontrado ninguna herramienta con esa búsqueda.</div></section></main><footer><div>Zurvo · Herramientas gratuitas para decisiones cotidianas.</div></footer><script>(function(){const input=document.getElementById('search'),grid=document.getElementById('toolGrid'),empty=document.getElementById('empty'),cards=[...document.querySelectorAll('.card')],chips=[...document.querySelectorAll('.chip')];let category='Todas';function render(){const q=(input.value||'').trim().toLowerCase();let visible=0;cards.forEach(c=>{const okCat=category==='Todas'||c.dataset.category===category;const okSearch=!q||c.dataset.search.includes(q);const show=okCat&&okSearch;c.style.display=show?'block':'none';if(show)visible++});empty.style.display=visible?'none':'block'}input.addEventListener('input',render);chips.forEach(ch=>ch.addEventListener('click',()=>{category=ch.dataset.filter;chips.forEach(x=>x.classList.toggle('active',x===ch));render()}));})();</script></body></html>
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#f5f7fb">
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-BXLVKJTHHB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-BXLVKJTHHB');
+</script>
+
+<title>Zurvo | Herramientas útiles</title>
+<meta name="description" content="Calculadoras y herramientas gratuitas para decisiones cotidianas.">
+<link rel="stylesheet" href="/ruptura.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="brand" href="/">
+    <span class="brand-mark">M</span>
+    <span>ZURVO</span>
+  </a>
+  <nav class="nav">
+    <a href="/">Inicio</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero reveal">
+  <span class="eyebrow">12 herramientas · gratis</span>
+
+  <h1>Haz tus cuentas.<br><span style="color:#6c7483">Sin complicarte.</span></h1>
+
+  <p class="hero-copy">
+    Un pequeño ecosistema de herramientas útiles para dinero, viajes, hogar, trabajo y matemáticas. Rápidas, claras y sin ruido.
+  </p>
+
+  <div class="search">
+    <span class="search-icon">⌕</span>
+    <input id="search" type="search" placeholder="Buscar una herramienta…" autocomplete="off">
+  </div>
+
+  <div class="chips" id="chips">
+    <button class="chip active" data-filter="Todas" type="button">Todas</button>
+    <button class="chip" data-filter="Viajes" type="button">Viajes</button>
+    <button class="chip" data-filter="Dinero" type="button">Dinero</button>
+    <button class="chip" data-filter="Matemáticas" type="button">Matemáticas</button>
+    <button class="chip" data-filter="Hogar" type="button">Hogar</button>
+    <button class="chip" data-filter="Trabajo" type="button">Trabajo</button>
+  </div>
+</section>
+
+<section>
+  <div class="grid" id="toolGrid">
+
+    <a class="card reveal delay-1" href="/calculadora-gasolina.html" data-category="Viajes" data-search="calculadora de gasolina calcula cuánto combustible y dinero necesitas para un trayecto. viajes">
+      <div class="card-top">
+        <span class="icon">⛽</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de gasolina</h3>
+      <p>Calcula cuánto combustible y dinero necesitas para un trayecto.</p>
+    </a>
+
+    <a class="card reveal delay-2" href="/coste-viaje-coche.html" data-category="Viajes" data-search="coste de viaje en coche estima el coste de un viaje según distancia, consumo y precio del combustible. viajes">
+      <div class="card-top">
+        <span class="icon">🚗</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Coste de viaje en coche</h3>
+      <p>Estima el coste de un viaje según distancia, consumo y precio del combustible.</p>
+    </a>
+
+    <a class="card reveal delay-3" href="/dividir-gastos-viaje.html" data-category="Dinero" data-search="dividir gastos reparte un gasto entre varias personas de forma rápida. dinero">
+      <div class="card-top">
+        <span class="icon">↗</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Dividir gastos</h3>
+      <p>Reparte un gasto entre varias personas de forma rápida.</p>
+    </a>
+
+    <a class="card reveal delay-1" href="/calculadora-descuento.html" data-category="Dinero" data-search="calculadora de descuento descubre cuánto ahorras y cuál será el precio final. dinero">
+      <div class="card-top">
+        <span class="icon">%</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de descuento</h3>
+      <p>Descubre cuánto ahorras y cuál será el precio final.</p>
+    </a>
+
+    <a class="card reveal delay-2" href="/calculadora-porcentaje.html" data-category="Matemáticas" data-search="calculadora de porcentaje calcula porcentajes de cualquier cantidad en segundos. matemáticas">
+      <div class="card-top">
+        <span class="icon">%</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de porcentaje</h3>
+      <p>Calcula porcentajes de cualquier cantidad en segundos.</p>
+    </a>
+
+    <a class="card reveal delay-3" href="/calculadora-iva.html" data-category="Dinero" data-search="calculadora de iva calcula iva y precio total de forma sencilla. dinero">
+      <div class="card-top">
+        <span class="icon">€</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de IVA</h3>
+      <p>Calcula IVA y precio total de forma sencilla.</p>
+    </a>
+
+    <a class="card reveal delay-1" href="/calculadora-prestamo.html" data-category="Dinero" data-search="calculadora de préstamo estima la cuota mensual de un préstamo. dinero">
+      <div class="card-top">
+        <span class="icon">▣</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de préstamo</h3>
+      <p>Estima la cuota mensual de un préstamo.</p>
+    </a>
+
+    <a class="card reveal delay-2" href="/calculadora-ahorro.html" data-category="Dinero" data-search="calculadora de ahorro calcula cuánto tiempo necesitas para alcanzar un objetivo. dinero">
+      <div class="card-top">
+        <span class="icon">◒</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de ahorro</h3>
+      <p>Calcula cuánto tiempo necesitas para alcanzar un objetivo.</p>
+    </a>
+
+    <a class="card reveal delay-3" href="/interes-compuesto.html" data-category="Dinero" data-search="interés compuesto estima cómo puede crecer una inversión con aportaciones periódicas. dinero">
+      <div class="card-top">
+        <span class="icon">↗</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Interés compuesto</h3>
+      <p>Estima cómo puede crecer una inversión con aportaciones periódicas.</p>
+    </a>
+
+    <a class="card reveal delay-1" href="/calculadora-electricidad.html" data-category="Hogar" data-search="calculadora de electricidad estima el consumo mensual y su coste. hogar">
+      <div class="card-top">
+        <span class="icon">ϟ</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de electricidad</h3>
+      <p>Estima el consumo mensual y su coste.</p>
+    </a>
+
+    <a class="card reveal delay-2" href="/calculadora-precio-hora.html" data-category="Trabajo" data-search="calculadora de precio por hora calcula cuánto ingresas aproximadamente por cada hora trabajada. trabajo">
+      <div class="card-top">
+        <span class="icon">◷</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Calculadora de precio por hora</h3>
+      <p>Calcula cuánto ingresas aproximadamente por cada hora trabajada.</p>
+    </a>
+
+    <a class="card reveal delay-3" href="/calculadora-regla-tres.html" data-category="Matemáticas" data-search="regla de tres resuelve reglas de tres simples rápidamente. matemáticas">
+      <div class="card-top">
+        <span class="icon">=</span>
+        <span class="arrow">↗</span>
+      </div>
+      <h3>Regla de tres</h3>
+      <p>Resuelve reglas de tres simples rápidamente.</p>
+    </a>
+
+  </div>
+
+  <div class="empty" id="empty">
+    No hemos encontrado ninguna herramienta con esa búsqueda.
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div>Zurvo · Herramientas gratuitas para decisiones cotidianas.</div>
+</footer>
+
+<script>
+(function(){
+  const input = document.getElementById('search');
+  const grid = document.getElementById('toolGrid');
+  const empty = document.getElementById('empty');
+  const cards = [...document.querySelectorAll('.card')];
+  const chips = [...document.querySelectorAll('.chip')];
+
+  let category = 'Todas';
+
+  function render(){
+    const q = (input.value || '').trim().toLowerCase();
+    let visible = 0;
+
+    cards.forEach(c => {
+      const okCat = category === 'Todas' || c.dataset.category === category;
+      const okSearch = !q || c.dataset.search.includes(q);
+      const show = okCat && okSearch;
+
+      c.style.display = show ? 'block' : 'none';
+
+      if(show) visible++;
+    });
+
+    empty.style.display = visible ? 'none' : 'block';
+  }
+
+  input.addEventListener('input', render);
+
+  chips.forEach(ch => ch.addEventListener('click', () => {
+    category = ch.dataset.filter;
+
+    chips.forEach(x => x.classList.toggle('active', x === ch));
+
+    render();
+  }));
+})();
+</script>
+
+</body>
+</html>
