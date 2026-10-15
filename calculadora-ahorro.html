@@ -13,7 +13,6 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-BXLVKJTHHB');
 </script>
 
@@ -52,7 +51,7 @@
       <div class="field">
         <label for="target">Objetivo</label>
         <div class="input-wrap">
-          <input id="target" type="number" step="any" value="5000">
+          <input id="target" type="number" min="0" step="any" value="5000">
           <span>€</span>
         </div>
       </div>
@@ -60,17 +59,19 @@
       <div class="field">
         <label for="monthly">Ahorro mensual</label>
         <div class="input-wrap">
-          <input id="monthly" type="number" step="any" value="250">
+          <input id="monthly" type="number" min="0" step="any" value="250">
           <span>€/mes</span>
         </div>
       </div>
     </div>
 
-    <button class="primary" type="button" onclick="calc()">
+    <button class="primary" id="calculateButton" type="button">
       Calcular resultado <span>→</span>
     </button>
 
-    <div id="result" class="result">Introduce tus datos y calcula.</div>
+    <div id="result" class="result" aria-live="polite">
+      Introduce tus datos y calcula.
+    </div>
   </section>
 
   <aside class="side reveal delay-2">
@@ -83,7 +84,6 @@
 
 <section>
   <h2>También puede interesarte</h2>
-
   <div class="grid">
     <a class="card reveal" href="/dividir-gastos-viaje.html" data-category="Dinero" data-search="dividir gastos reparte un gasto entre varias personas de forma rápida. dinero">
       <div class="card-top">
@@ -117,20 +117,93 @@
 </section>
 
 <script>
-function calc(){
-  const target = Number(document.getElementById('target').value);
-  const monthly = Number(document.getElementById('monthly').value);
+(function () {
+  const targetInput = document.getElementById('target');
+  const monthlyInput = document.getElementById('monthly');
+  const button = document.getElementById('calculateButton');
   const result = document.getElementById('result');
 
-  result.classList.remove('is-error');
+  function calculateSavings() {
+    result.classList.remove('is-error');
 
-  if([target, monthly].some(Number.isNaN)){
-    result.textContent = 'Introduce todos los valores.';
-    result.classList.add('is-error');
-    return;
+    const targetText = targetInput.value.trim();
+    const monthlyText = monthlyInput.value.trim();
+
+    if (targetText === '' || monthlyText === '') {
+      result.textContent = 'Introduce el objetivo y el ahorro mensual.';
+      result.classList.add('is-error');
+      return;
+    }
+
+    const target = Number(targetText);
+    const monthly = Number(monthlyText);
+
+    if (
+      !Number.isFinite(target) ||
+      !Number.isFinite(monthly) ||
+      target < 0 ||
+      monthly <= 0
+    ) {
+      result.textContent = 'Introduce un objetivo igual o superior a 0 € y un ahorro mensual superior a 0 €.';
+      result.classList.add('is-error');
+      return;
+    }
+
+    if (target === 0) {
+      result.textContent = '¡Objetivo alcanzado! No necesitas ahorrar más.';
+      return;
+    }
+
+    const months = Math.ceil(target / monthly);
+    const years = Math.floor(months / 12);
+    const remainingMonths = months % 12;
+
+    let duration = '';
+
+    if (years > 0) {
+      duration += years + (years === 1 ? ' año' : ' años');
+    }
+
+    if (remainingMonths > 0) {
+      if (duration !== '') duration += ' y ';
+      duration += remainingMonths +
+        (remainingMonths === 1 ? ' mes' : ' meses');
+    }
+
+    const euro = value => value.toLocaleString('es-ES', {
+      style: 'currency',
+      currency: 'EUR'
+    });
+
+    result.textContent =
+      'Necesitas aproximadamente ' + months +
+      (months === 1 ? ' mes' : ' meses') +
+      ' (' + duration + ') para alcanzar tu objetivo.';
+
+    if (months * monthly > target) {
+      result.textContent +=
+        ' Ahorrarás ' + euro(months * monthly) +
+        ' en total, ' + euro(months * monthly - target) +
+        ' por encima del objetivo.';
+    }
   }
 
-  try {
-    result.textContent = (function(){
-      if(monthly <= 0) return 'Introduce un ahorro mensual válido.';
-      return `Necesitas aproximadamente ${Math.ceil(target/monthly)} meses.`;
+  button.addEventListener('click', calculateSavings);
+
+  targetInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') calculateSavings();
+  });
+
+  monthlyInput.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') calculateSavings();
+  });
+})();
+</script>
+</main>
+
+<footer>
+  <div>Zurvo · Herramientas gratuitas para decisiones cotidianas.</div>
+</footer>
+</body>
+</html>
+```
